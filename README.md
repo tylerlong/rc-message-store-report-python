@@ -9,3 +9,8 @@ source ./venv/bin/activate
 pip install ringcentral_client
 ```
 
+## Run
+
+```
+python index.py
+```
