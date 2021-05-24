@@ -2,11 +2,7 @@ from ringcentral_client import RestClient, PRODUCTION_SERVER
 
 rc = RestClient("clientId", "clientSecret", PRODUCTION_SERVER)
 
-# rc.authorize('username', 'extension', 'password')
-
-# rc.token = {
-#   'access_token': ''
-# }
+rc.authorize('username', 'extension', 'password')
 
 r = rc.get('/restapi/v1.0/account/000000/message-store-report/111111')
 print(r.text)
